@@ -4,7 +4,8 @@
   "description": "node-test",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "server": "node server.js",
+    "build": "babel src -d build"
   },
   "author": "Me",
   "license": "ISC",
@@ -12,5 +13,10 @@
     "express": "^4.17.2",
     "joi": "^17.5.0",
     "shortid": "^2.2.16"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.16.8",
+    "@babel/core": "^7.16.12",
+    "@babel/preset-env": "^7.16.11"
   }
 }
